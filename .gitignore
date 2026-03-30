@@ -24,8 +24,11 @@ dist/
 .DS_Store
 *.pem
 
-# Claude
-.claude/settings.local.json
+# Claude / internal
+.claude/
+CLAUDE.md
+AGENTS.md
+docs/superpowers/
 
 # TypeScript
 *.tsbuildinfo
