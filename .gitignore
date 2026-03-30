@@ -45,3 +45,20 @@ next-env.d.ts
 CLAUDE.md
 AGENTS.md
 docs/superpowers/
+
+# Config files
+tsconfig.json
+eslint.config.mjs
+postcss.config.mjs
+next.config.ts
+pnpm-workspace.yaml
+pnpm-lock.yaml
+vitest.config.ts
+components.json
+
+# Next.js default public assets
+public/file.svg
+public/globe.svg
+public/next.svg
+public/vercel.svg
+public/window.svg
