@@ -65,3 +65,9 @@ public/window.svg
 
 # Database
 supabase/
+
+# Business logic — never public
+scanner/
+app/api/
+lib/
+package.json
