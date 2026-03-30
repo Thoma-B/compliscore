@@ -1,126 +1,51 @@
 # CompliScore
 
-> Scan de conformité RGPD + cybersécurité pour startups et PME — score 0-100 avec checklist actionnable.
+> Votre site est-il conforme ? Découvrez-le en 60 secondes.
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue?logo=typescript)
-![Supabase](https://img.shields.io/badge/Supabase-postgres-green?logo=supabase)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
+**CompliScore** analyse automatiquement votre site web et vous donne un score de conformité RGPD et cybersécurité, avec une checklist claire pour corriger les points faibles.
 
 ---
 
-## ✨ Fonctionnalités
+## 🎯 Pour qui ?
 
-- **Scan en < 60 secondes** — entrez un domaine, obtenez un score instantané
-- **Score 0-100** avec grade (A → F) et détail par catégorie
-- **Checklist actionnable** — chaque point expliqué avec recommandations concrètes
-- **Checks couverts :**
-  - 🔒 HTTPS & headers de sécurité (CSP, HSTS, X-Frame-Options...)
-  - 🍪 Bannière cookies & conformité RGPD
-  - 📄 Politique de confidentialité & mentions légales
-  - 📧 Sécurité email (SPF, DKIM, DMARC)
-  - 🕵️ Trackers tiers détectés
-  - 🔓 Informations serveur exposées
+- Startups et PME qui veulent se mettre en conformité sans payer un cabinet
+- Développeurs qui veulent valider la sécurité de leur site avant un lancement
+- Agences qui veulent livrer des sites conformes à leurs clients
 
 ---
 
-## 🛠 Stack
+## ✨ Ce que vous obtenez
 
-| Couche | Technologie |
-|--------|-------------|
-| Frontend | Next.js 14 (App Router) + Tailwind CSS + shadcn/ui |
-| Backend | Next.js API Routes |
-| Base de données | Supabase (PostgreSQL + RLS) |
-| Moteur de scan | Node.js (fetch, dns, cheerio) |
-| Tests | Vitest |
-| Déploiement | Vercel |
+- **Un score 0-100** avec grade (A → F)
+- **Une checklist actionnable** — chaque problème expliqué simplement
+- **Des résultats en < 60 secondes** — entrez un domaine, c'est tout
+- **Aucune installation** — 100% en ligne
 
 ---
 
-## 🚀 Démarrage rapide
+## 🔍 Ce qui est analysé
 
-### Prérequis
-
-- Node.js 18+
-- pnpm
-- Compte [Supabase](https://supabase.com)
-
-### Installation
-
-```bash
-git clone https://github.com/Thoma-B/compliscore.git
-cd compliscore
-pnpm install
-```
-
-### Configuration
-
-```bash
-cp .env.local.example .env.local
-```
-
-Remplissez `.env.local` avec vos credentials Supabase :
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-```
-
-### Base de données
-
-```bash
-# Appliquer les migrations
-supabase db push
-# ou manuellement via Supabase Studio
-```
-
-### Développement
-
-```bash
-pnpm dev
-```
-
-Ouvrez [http://localhost:3000](http://localhost:3000).
+- Sécurité HTTPS et headers de protection
+- Conformité des cookies et bandeau RGPD
+- Présence des mentions légales et politique de confidentialité
+- Sécurité email (anti-spoofing)
+- Trackers tiers détectés
+- Informations serveur exposées
 
 ---
 
-## 🧪 Tests
+## 🚀 Essayer
 
-```bash
-pnpm test        # run all tests
-pnpm test:watch  # watch mode
-```
-
----
-
-## 📁 Structure
-
-```
-compliscore/
-├── app/                    # Pages Next.js (App Router)
-│   ├── api/scan/           # API routes du moteur de scan
-│   └── scan/[id]/          # Page de résultats
-├── components/             # Composants UI réutilisables
-│   └── ui/                 # shadcn/ui primitives
-├── lib/                    # Utilitaires & clients
-│   └── supabase/           # Client Supabase (server/client)
-├── scanner/                # Moteur de scan
-│   ├── checks/             # Vérifications individuelles
-│   ├── scoring.ts          # Calcul du score
-│   └── types.ts            # Types TypeScript
-└── supabase/
-    └── migrations/         # Migrations SQL
-```
+> 🔗 **[compliscore.fr](https://compliscore.fr)** *(coming soon)*
 
 ---
 
 ## ⚠️ Disclaimer
 
-> CompliScore fournit un score **indicatif** basé sur des vérifications automatisées. Il ne constitue pas un audit légal ni une certification de conformité. Pour une analyse complète, consultez un expert juridique ou en cybersécurité.
+CompliScore fournit un score indicatif basé sur des vérifications automatisées. Il ne constitue pas un audit légal ni une certification de conformité.
 
 ---
 
 ## 📄 Licence
 
-MIT © [Thoma Boudhou](https://thoma-boudhou.pages.dev)
+© 2026 Thoma Boudhou — Source disponible, usage commercial interdit. Voir [LICENSE](./LICENSE).
