@@ -36,7 +36,7 @@
 
 ## 🚀 Essayer
 
-> 🔗 **[compliscore.fr](https://compliscore.fr)** *(coming soon)*
+> 🔗 **[compliscore.fr](https://www.compliscore.fr/)** 
 
 ---
 
